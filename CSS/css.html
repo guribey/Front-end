@@ -1,0 +1,618 @@
+<!-- CSS İÇİN DERS NİTELİĞİNDEDİR -->
+<!-- 
+  1- etiket ile css
+  2- style etiketi ile css
+  3- harici bir css dosyası ile css
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18.12.2022</title>
+
+  <style>
+    h2 {
+      color: red;
+    }
+  </style> <!--head içine style açıp bunu yaptığında tüm h2ler kırmızı oluyo-->
+
+
+  <link rel="stylesheet" href="need/app.css">
+  <!-- başka bir dosyayı(app.css) bu dosyaya css olarak dahil etme olayı-->
+
+
+  <style>
+    .GurayClass {
+      color: rgb(0, 255, 38);
+      font-size: 10px;
+    }
+
+    /* YORUM SATIRI */
+
+    #Gurayy {
+      color: aqua;
+    }
+  </style> <!-- class ve id oluşturdum. id tek yerde kullanılır class çok yerde-->
+
+  <style>
+    /* kutu şeklinde renk yapıyoruz */
+    .renk {
+      background-color: brown;
+      width: 250px;
+      height: 60px;
+    }
+
+    h5 {
+      color: #6EFAB4;
+    }
+
+    .divicin {
+      background-color: grey;
+      height: 250px;
+      width: 500px;
+    }
+
+    .divicin2 {
+      background-color: greenyellow;
+      height: 250px;
+      width: 500px;
+    }
+
+    .divicin3 {
+      background-color: red;
+      width: 400px;
+      height: 440px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      /* yazıları ortalıyo. left right da var*/
+    }
+
+    .divicin4 {
+      background-color: rgb(4, 161, 1);
+      width: 300px;
+      height: 300px;
+    }
+
+    .divicin5 {
+      background-image: url(need/kaisa.jpg);
+      /* classla fotoğraf getiriyor */
+      background-size: cover;
+      /*resmi kaplıyo*/
+      background-position: center;
+      /*resmi ortalıyo*/
+      height: 500px;
+      /* kartın boyutlarını ayarlıyo*/
+      width: 500px;
+      border: 5px solid rgb(255, 126, 242);
+      /*resmin etrafına çizgi çekiyo*/
+    }
+
+    .divicin6 {
+      background-color: aquamarine;
+      width: 300px;
+      height: 300px;
+      border: 7px inset blue;
+      /*kalınlığı - tipi - rengi*/
+      border-radius: 30px;
+      /* köşelerini ovalleştiriyo*/
+    }
+
+    .divicin7 {
+      background-color: skyblue;
+      width: 50%;
+      /*tarayıcının %50sini kaplayan bir genişlik ayarla*/
+      height: 100px;
+    }
+
+    .divicin8 {
+      background-color: skyblue;
+      width: 50%;
+      /*tarayıcının %50sini kaplayan bir genişlik ayarla*/
+      height: 300px;
+    }
+
+    .divicin9 {
+      background-color: rgb(250, 1, 1);
+      width: 50%;
+      /* 9'u 8'in içine atacağım için onun %50si kadar geniş olacak*/
+      height: 150px;
+      color: white;
+    }
+
+    .divicin10 {
+      /* margin kutu dışında kaydırıyo*/
+      background-color: lightblue;
+      width: 300px;
+      height: 300px;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-bottom: 50px;
+    }
+
+    .divicin11 {
+      background-color: lightcoral;
+      width: 200px;
+      height: 300px;
+
+    }
+
+    .divicin12 {
+      /* padding kutu içinde kaydırıyo*/
+      padding-left: 50px;
+      padding-top: 50px;
+    }
+
+    .divicin13 {
+      background-color: blueviolet;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+    }
+
+    /* 13 ve 14ü inline-block olarak yan yana getirmek üzere tasarladım */
+    .divicin14 {
+      background-color: violet;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      margin-left: 100px;
+      /*marginle aralarına biraz mesafee açtım*/
+    }
+
+    .divicin15 {
+      /*yazının biçimiyle falan oynuyoruz*/
+      color: navy;
+      background-color: rgb(102, 255, 0);
+      text-align: center;
+      font-weight: bold;
+      /*kalınlaştırıyo*/
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      /*yazı tipi*/
+      font-style: italic;
+      text-transform: uppercase;
+      /*harfleri büyütüyo*/
+      letter-spacing: 5px;
+      /*harflerin arasındaki boşluğu ayarlıyo*/
+      text-decoration: underline;
+      /*çizgi çekiyo*/
+      word-spacing: 10px;
+      /*kelimeler arası boşluk*/
+    }
+
+    .divicin16 {
+      /*liste için biçimlendirme yapıyoruz*/
+      list-style-type: lower-greek;
+      color: #1f0cf4;
+      text-align: center;
+    }
+
+    .divicin17 {
+      list-style-type: lower-roman;
+      color: brown;
+      text-align: initial;
+    }
+
+
+
+
+
+
+    /*ÖNEMLİ ÖNEMLİ ÖNEMLİ ÖNEMLİ*/
+    /*selectors*/
+    /*SELECTORLER YORUM SATIRINA ALINMADIĞI İÇİN 
+      AYRI BİR DOSYADA KAYDETTİM. selectors.html */
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- style'ın dışına link yazıyosun. kodunu aldığın ikonun ait olduğu url'den link kullanarak getiriyosun-->
+  <style>
+    /* icon için css yapıyoruz */
+    i {
+      font-size: 50px;
+      color: red;
+    }
+  </style>
+
+  <style>
+    a:link {
+      /*linkin ilk hali*/
+      color: #fa6ee0;
+      text-decoration: dashed;
+    }
+
+    a:hover {
+      /*üzerine gelindiğinde*/
+      color: black;
+    }
+
+    a:active {
+      /*üzerine tıklanıldığında*/
+      color: #fa6ee0;
+      background-color: blue;
+    }
+
+    a:visited {
+      /*siteye girildikten sonra*/
+      color: forestgreen;
+      background-color: black;
+      text-decoration: overline;
+    }
+
+    table,
+    th,
+    td {
+      /*tabloları özelleştiriyoruz*/
+      border: 1px solid blue;
+      /*tablonun kenarına çizgi çekiyo renk veriyo*/
+      border-collapse: collapse;
+      /*tablonun kenarını tek çizgi yapıyo*/
+    }
+
+    #tablo1 th {
+      /*tablo başlığı için*/
+      background-color: green;
+      color: white;
+    }
+
+    #tablo1 tr:nth-child(even) {
+      /*tekli satırların rengini değiştiriyo*/
+      background-color: grey;
+    }
+
+    #tablo1 tr:hover {
+      background-color: #1f0cf4;
+    }
+
+    table {
+      /*sayfaya yayılsın diye*/
+      width: 100%;
+    }
+
+    .img1 {
+      /*fotoğrafı yazıların altına yerleştirebilmek için*/
+      background-position: center;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      /*bunu yazıyomuşsun*/
+      z-index: -1;
+      /*1 katman aşağı al diyo*/
+      top: 20px;
+      /*üstten ne kadar boşluk bıraklıacağını ayarlıyo*/
+    }
+
+    .divicin18 {
+      background-color: gold;
+      width: 300px;
+      height: 300px;
+      overflow: auto;
+    }
+
+    /* overflow dışına taşmayı ayarlıyo. hidden olursa taşanları gizliyo
+        scroll olursa kaydırmalı yapıyo. auto olursa taşma durumunda otomatik ayarlıyo.*/
+
+
+    /*dikey --> yatay menü yapıyoruz*/
+    ul {
+      /* listenin başındaki noktayı kaldırdı*/
+      list-style-type: none;
+      width: 100%;
+      background-color: #aff6ba;
+    }
+
+    ul li {
+      display: inline-block;
+      /*hem inline hem block yap*/
+      padding: 15px;
+      /*aralarında boşluk açtı*/
+      margin-left: -40px;
+      margin-right: 40px;
+    }
+
+    ul li:hover {
+      /*kutu şeklinde renk değiştiriyor.*/
+      background-color: red;
+      transition: 2s;
+      /*üstüne geldiğinde yeşil olma süresi*/
+    }
+
+    /*-----bu iptal sadece yazının rengini değiştirmeli yapıcaz*/
+
+    ul li a {
+      /* listenin yazılarını düzeltmek için*/
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    /* ul li a:hover{
+          color: red;
+          transition: 2s;
+        } kutu şeklinde renk değiştirmek yerine sadece yazının rengini değiştiriyo */
+
+
+
+    /*dropdown menü yapıyoruz*/
+    #dropdown {
+      display: none;
+      z-index: 1;
+      position: absolute;
+      margin-top: 15px;
+      margin-left: -15px;
+      width: 100px;
+    }
+
+    .dropdown1:hover #dropdown {
+      display: block;
+    }
+
+    #dropdown2 {
+      position: absolute;
+      z-index: 1;
+      display: none;
+      margin-left: 115px;
+      margin-top: -34px;
+      width: 100px;
+    }
+
+    .dropdown3:hover #dropdown2 {
+      display: block;
+    }
+  </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <h1 style="color: blue;"> GüraY</h1> <!-- style etiketiyle renklendirme-->
+
+  <h2>GüraY</h2>
+  <h2>Kesici</h2>
+  <h3>barbie</h3>
+  <h3>ken</h3>
+
+  <h4 class="GurayClass">Lorem, ipsum dolor.</h4> <!-- Classın özelliğini zerk ettim.-->
+  <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+  <h4 class="GurayClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum!</h4>
+  <h4 id="Gurayy">Lorem.</h4>
+
+  <h5>Messi</h5> <!-- 44. satırdaki renklendirmeyi uyguluyo-->
+
+  <div class="renk"></div> <!--39. satırdaki classı uyguluyo-->
+
+  <hr>
+
+  <div class="divicin"></div>
+  <div class="divicin2"></div>
+
+  <hr>
+
+  <div class="divicin3"> <!-- 57. satırdaki classı çalıştırıyor-->
+    <center>
+      <br>
+      <h1>İSTİKLÂL MARŞI</h1>
+      <p>Korkma, sönmez bu şafaklarda yüzen al sancak;
+        <p />
+      <p>Sönmeden yurdumun üstünde tüten en son ocak.
+        <p />
+      <p>O benim milletimin yıldızıdır, parlayacak;
+        <p />
+      <p>O benimdir, o benim milletimindir ancak.
+        <p />
+        <br>
+      <p>Çatma, kurban olayım çehreni ey nazlı hilâl!
+        <p />
+      <p>Kahraman ırkıma bir gül… ne bu şiddet bu celâl?
+        <p />
+      <p>Sana olmaz dökülen kanlarımız sonra helâl,
+        <p />
+      <p>Hakkıdır, Hakk’a tapan, milletimin istiklâl.
+        <p />
+    </center>
+  </div>
+
+  <hr>
+
+  <div class="divicin4">
+    <img src="need/google.png" alt="" height="250px" width="250px">
+  </div>
+
+  <hr>
+
+  <div class="divicin5"> <!-- classla fotoğraf çağırdık-->
+  </div>
+
+  <hr>
+
+  <div class="divicin6"> <!-- 77. satırdaki class -->
+  </div>
+
+  <hr>
+
+  <div class="divicin7">
+  </div>
+
+  <hr>
+
+  <div class="divicin8"> <!-- iç içe kutu yapıyo-->
+    <div class="divicin9">
+      <p>Adımı Kalbine Yaz</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="divicin10"></div> <!-- margin özelliklerini kullanıyor-->
+  <h1 style="margin-bottom: 50px;"> Ay Yıldız </h1> <!-- margin h içinde-->
+  <p style="margin-left: 50px; margin-bottom: 50px;"> Bayrak </p> <!--margin p içinde-->
+
+  <hr>
+  <hr>
+
+  <div class="divicin11">
+    <p class="divicin12">Gün Ay Yıldız</p>
+    <p class="divicin12">Gök Dağ Deniz</p>
+    <p style="padding-left: 50px; padding-top: 40px;color: white;"> Oğuz Kağan</p>
+    <!-- padding kullanımı-->
+    <p style="text-align: right;padding-right: 50px; padding-top: 10px;">Üçok Bozok</p>
+    <!--text align: right yazıyı sağa yapıştırıyo-->
+  </div>
+
+  <hr>
+
+  <p style="display: inline;">Fatih Sultan Mehmet</p> <!--blok elementi inline yaptı-->
+  <a href="#" style="display: block;"> Tikyaliniz. </a> <!--inline elementi block yaptı-->
+  <!--inline elemente genişlik ve yükselik verilemez. block elemente veriebilir.-->
+  <br>
+  <div class="divicin13" style="text-align: center;">inline-block</div>
+  <div class="divicin14" style="text-align: center;">inline-block</div>
+
+  <hr>
+  <hr>
+
+  <p class="divicin15">Ne Mutlu Türküm Diyene🌹</p> <!--divicin15 classını getiriyo-->
+  <hr>
+  <hr>
+  <br>
+
+  <i class="fa-solid fa-house"></i> <!--ikonun kodu-->
+  <!--152. satırda ikonun ait olduğu linkten geliyo-->
+  <i class="fa-solid fa-g"></i>
+  <i class="fa-solid fa-u"></i>
+  <i class="fa-solid fa-r"></i>
+  <i class="fa-solid fa-a"></i>
+  <i class="fa-solid fa-y"></i>
+
+  <br>
+  <i class="fa-solid fa-house"></i>
+  <a href="http://google.com.tr">Anasayfa</a>
+  <hr>
+
+  <a href="https://www.google.com.tr">Google</a>
+  <!--link butonunu özelleştirdiğimiz yer-->
+  <hr>
+
+  <ul class="divicin16">
+    <li>Güray</li>
+    <li>Kesici</li>
+    <li>Güribey</li>
+  </ul>
+
+  <ol class="divicin17">
+    <li>Güray</li>
+    <li>Kesici</li>
+    <li>Güribey</li>
+  </ol>
+
+  <hr>
+  <hr>
+
+
+  <table id="tablo1">
+    <tr>
+      <th>isim</th>
+      <th>soyisim</th>
+      <th>cinsiyet</th>
+    </tr>
+    <tr>
+      <td>Güray</td>
+      <td>Kesici</td>
+      <td>ERKEK</td>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>Kesici</td>
+      <td>Erkek</td>
+    </tr>
+    <tr>
+      <td>Saim</td>
+      <td>Kesici</td>
+      <td>ERKEK</td>
+    </tr>
+    <tr>
+      <td>Zeynep</td>
+      <td>Kesici</td>
+      <td>Kadın</td>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+  <br>
+
+  <img class="img1" src="need/1517974090997.jfif" alt="">
+
+  <hr>
+  <br>
+
+  <div class="divicin18">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores vel, doloremque numquam, unde id minus
+      voluptates distinctio placeat illum eum et totam odio dolorum qui rem nisi ratione animi enim aspernatur omnis,
+      modi ipsum! Sit voluptas tempore distinctio quos fugit recusandae ex quo omnis nobis illum, magnam, hic quisquam!
+      Laudantium accusantium laboriosam nam eum enim tempore harum placeat debitis ea quibusdam asperiores blanditiis
+      incidunt excepturi, atque porro molestias nisi, iure dolorum! Laborum consequuntur doloribus culpa! Expedita,
+      magnam earum esse ab impedit saepe commodi explicabo minima nam consequatur possimus repellendus illum quia natus
+      maiores quaerat doloremque dolor nostrum eveniet dicta!</p>
+    <p>Güray</p>
+    <p>Güray</p>
+    <p>Güray</p>
+  </div>
+
+  <hr>
+  <br>
+
+
+  <ul>
+    <li class="dropdown1">
+      <a href="https://www.google.com/" target="_blank">Google</a>
+
+      <div id="dropdown">
+        <ul>
+          <li class="dropdown3" style="display: block;"><a href="">Görseller </a>
+            <div id="dropdown2">
+              <ul>
+                <li><a href=""></a>F1</li>
+                <li><a href=""></a>Futbol</li>
+                <li><a href=""></a>Tenis</li>
+                <li><a href=""></a>Atletizm</li>
+              </ul>
+            </div>
+          </li>
+          <li style="display: block;"><a href="">Harita </a></li>
+          <li style="display: block;"><a href="">Haberler </a></li>
+          <li style="display: block;"><a href="">Gmail </a></li>
+        </ul>
+      </div>
+
+    </li>
+
+
+    <li><a href="https://www.twitter.com/">Twitter</a></li>
+    <li><a href="https://www.youtube.com/">Youtube</a></li>
+    <li><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a></li>
+  </ul>
+
+
+
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+
+</html>

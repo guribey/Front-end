@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.</title>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+            <a class="navbar-brand" target="_blank"
+                href="https://www.google.com/search?q=new+york&rlz=1C1SQJL_trTR808TR808&oq=new+york&aqs=chrome.0.0i355i433i512j46i433i512j0i131i433i512j0i433i512j0i512l2j0i131i433i650j69i61.3472j0j9&sourceid=chrome&ie=UTF-8">
+                <img src="need/tommy.jpg" width="20" height="30" alt="">
+                Liberty City
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" target="_blank"
+                            href="https://www.google.com/search?q=miami&sca_esv=564736079&rlz=1C1SQJL_trTR808TR808&sxsrf=AB5stBh66nmzl0LlLjkCQi8gzYl6W_d7_Q%3A1694539711624&ei=v58AZd2lJYKVxc8Pha-V2Aw&ved=0ahUKEwidgcaszKWBAxWCSvEDHYVXBcsQ4dUDCBA&uact=5&oq=miami&gs_lp=Egxnd3Mtd2l6LXNlcnAiBW1pYW1pMgoQLhiKBRixAxhDMgoQLhiKBRixAxhDMgcQABiKBRhDMggQLhiABBixAzIIEC4YgAQYsQMyDRAuGIoFGLEDGIMBGEMyBxAuGIoFGEMyCBAAGIAEGLEDMggQLhiABBixAzIFEAAYgAQyGRAuGIoFGLEDGEMYlwUY3AQY3gQY4ATYAQFInRBQ3AdYow9wA3gBkAEAmAHBAaABwQWqAQMwLjS4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEC4YigUYsAMYQ8ICBxAjGIoFGCfCAgQQIxgnwgILEAAYgAQYsQMYgwHCAgsQABiKBRixAxiDAcICCxAuGIoFGLEDGIMBwgIUEC4YgAQYsQMYxwEYrwEYmAUYmQXCAgsQLhiABBjHARivAeIDBBgAIEGIBgGQBgm6BgYIARABGBQ&sclient=gws-wiz-serp"
+                            style="color: darkblue;">Vice City <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank"
+                            href="https://www.google.com/search?q=kaliforniya&sca_esv=564736079&rlz=1C1SQJL_trTR808TR808&biw=1536&bih=747&sxsrf=AB5stBizO8bWP_6qmFjUpvLhQ764kHNvKQ%3A1694613176148&ei=uL4BZdrCCOitxc8PyYOMiA4&oq=kqli&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGtxbGkqAggAMgcQIxixAhgnMgoQLhiKBRixAxhDMgoQABiABBixAxgKMg0QABiABBixAxiDARgKMg0QABiABBixAxiDARgKMgcQABiKBRhDMgcQABiKBRhDMg0QABiABBixAxiDARgKMgoQABiABBixAxgKMgcQABiABBgKMhkQLhiKBRixAxhDGJcFGNwEGN4EGOAE2AEDSO0UUNwIWOIMcAN4AJABAZgBvQGgAYcHqgEDMC41uAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAg4QABjkAhjWBBiwA9gBAcICEBAuGIoFGMgDGLADGEPYAQLCAg0QLhiKBRjHARivARgnwgIHEC4YigUYJ8ICBxAjGIoFGCfCAgsQABiKBRixAxiDAcICCxAAGIAEGLEDGIMBwgIFEC4YgATCAgcQLhiKBRhDwgIaEC4YigUYxwEYrwEYlwUY3AQY3gQY4ATYAQPCAhEQLhiDARjHARixAxjRAxiABMICBRAAGIAEwgIgEC4YgwEYxwEYsQMY0QMYgAQYlwUY3AQY3gQY4ATYAQPCAhYQLhiKBRhDGJcFGNwEGN4EGOAE2AED4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp"
+                            style="color: darkorchid;">San Andreas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false" style="color: deeppink;">
+                            Legends
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tommy.html">Tommy Vercetti</a>
+                            <a class="dropdown-item" href="CJ.html">CJ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="nico.html">Niko Bellic</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Fast and Furious
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Toretto</a>
+                            <a class="dropdown-item" href="#">Brian</a>
+                            <a class="dropdown-item" href="#">Roman</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">C4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="First.html" style="color: rgb(249, 174, 14);">H O
+                            M E</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit"
+                        style="color: aliceblue;">Git</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="need/messiucl2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="need/vargas3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="need/bolt3.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h3 class="text-center mt-5"> 2014/15 FC Barcelona</h3>
+        <p>
+            Barcelona, 2014/15 sezonuna, Luis Enrique'nin teknik direktörlüğünde başladı. Enrique, takımın başına
+            geldiğinde, Lionel Messi, Neymar ve Luis Suarez'den oluşan dünyanın en iyi hücum hattına sahipti. Bu üçlü,
+            takıma büyük katkı sağladı ve Barcelona'nın lig ve kupa şampiyonluğu elde etmesinde önemli rol oynadı.
+            Barcelona, ligde, Real Madrid ile çekişmeli bir mücadeleye girdi. İki takım arasında oynanan 2 maç da
+            berabere sonuçlandı. Barcelona, son haftalarda aldığı galibiyetler sayesinde ligi 1 puan farkla lider
+            tamamladı. UEFA Şampiyonlar Ligi'nde ise Barcelona, çeyrek finalde Bayern Münih'e elendi. Bayern Münih,
+            Barcelona'yı ilk maçta 4-0, ikinci maçta da 3-2 yenerek turnuvaya veda ettirdi. Lionel Messi'nin müthiş
+            performansı Lionel Messi, 2014/15 sezonunda, kariyerinin en iyi performanslarından
+            birini sergiledi. Messi, ligde 43 gol atarak gol krallığına ulaştı. Ayrıca, 20 asist yaparak takımının en
+            çok asist yapan oyuncusu oldu. Messi, UEFA Şampiyonlar Ligi'nde de 10 gol atarak gol krallığında 3. sırada
+            yer aldı. Messi, Barcelona'nın lig şampiyonluğu ve Copa del Rey şampiyonluğunda başrol oynadı. Messi,
+            özellikle Real Madrid ile oynanan maçlarda takımına önemli katkı sağladı. Neymar ve Luis Suarez'in katkısı
+            Neymar ve Luis Suarez de Barcelona'nın başarısında önemli rol oynadı. Neymar, ligde 24 gol atarak takımın en
+            skorer ikinci oyuncusu oldu. Ayrıca, 10 asist yaparak Messi'ye önemli katkı sağladı. Suarez ise ligde 22 gol
+            atarak takımın en skorer üçüncü oyuncusu oldu. Neymar ve Suarez, özellikle Messi'nin yokluğunda takımın
+            hücum hattına liderlik etti. 2014/15 sezonu, Barcelona için başarılı bir sezondu. Lionel Messi'nin müthiş
+            performansı ve Neymar ile Luis Suarez'in katkısı sayesinde Barcelona, lig ve kupa şampiyonluğu elde etti.
+        </p>
+
+
+
+        <div class="row mt-5">
+            <div class="col-sm mt-3">
+                <div class="card">
+                    <img src="need/neymarfinal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Neymar</h5>
+                        <p class="card-text">Senden nefret ediyorum çünkü seni çok sevmiştim.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Neymar" target="_blank"
+                            class="btn btn-primary">Neymar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-3">
+                <div class="card">
+                    <img src="need/suarezfinal.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Suarez</h5>
+                        <p class="card-text">One of the Greatest Striker Ever.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Luis_Su%C3%A1rez" target="_blank"
+                            class="btn btn-primary">Suarez</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-3">
+                <div class="card">
+                    <img src="need/messifinal.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Messi</h5>
+                        <p class="card-text">DNA'sında A-T G-S harflerinin yerine FOOTBALL harfleri yazan kişi. En iyisi.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Lionel_Messi" target="_blank"
+                            class="btn btn-primary">Messi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm mt-3">
+                <div class="card">
+                    <img src="need/xavi2015.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Xavi</h5>
+                        <p class="card-text">One of the Greatest midfielder ever.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Xavi" target="_blank" class="btn btn-primary">Xavi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-3">
+                <div class="card">
+                    <img src="need/busquets2015.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Busquets</h5>
+                        <p class="card-text">Brain. Spider. Missionary</p>
+                        <a href="https://tr.wikipedia.org/wiki/Luis_Su%C3%A1rez" target="_blank"
+                            class="btn btn-primary">Busquets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm mt-3">
+                <div class="card">
+                    <img src="need/iniesta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Iniesta</h5>
+                        <p class="card-text">Pleasure. Grand Master.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Andr%C3%A9s_Iniesta" target="_blank"
+                            class="btn btn-primary">Iniesta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<br>
+        <div class="--container-fluid"> <!-- 1 tane satırı 3 parçaya bölen bir yapı oluşturuyo-->
+            <div class="row">
+                <div class="col-sm-3"> 
+                    <video width="255" height="450" controls src="need/messi.edit2.mp4"></video>
+                </div>
+                <div class="col-sm-4" style="padding-left: 55px;"> 
+                    <video width="450" height="450" controls src="need/messi.edit1.mp4"></video>
+                </div>
+                <div class="col-sm-4" style="padding-left: 208px;">
+                    <video width="255" height="450" controls src="need/messi.edit3.mp4"></video>
+                </div>
+            </div>
+        </div>
+
+
+    
+
+        <div class="row mt-4">
+            <div class="col-sm-12 com-md-4 col-lg-4">
+                <div class="card">
+                    <div class="card-header" style="background-color: rgba(0, 0, 0, 0.968); color: aliceblue;">
+                        Creators
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" style="background-color: rgb(0, 191, 255); color: aliceblue;">Güray</li>
+                        <li class="list-group-item" style="background-color: red; color: aliceblue;">Güribey</li>
+                        <li class="list-group-item" style="background-color: blue; color: aliceblue;">Kesici</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-8 mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <br><br><br><br>
+</body>
+
+</html>

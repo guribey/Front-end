@@ -1,2 +1,2 @@
 # Front-end
-  Klasaörde HTML, CSS, Bootstrap, Javascript dosyaları ve bunlarla yapılan projeler projeler bulunmaktadır.
+  This folder contains HTML, CSS, Bootstrap, Javascript files and projects made with them.

@@ -1,0 +1,1121 @@
+<!-- BOOTSTRAP İÇİN DERS NİTELİĞİNDEDİR -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Ballon Dor</title>
+
+
+    <!--bootstrap ile linkten css dahil etme-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- boostrap ile linkten js dahil etme-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <p style="margin-left: 50px; margin-top: 50px;"><b>GüraY</b></p>
+
+    <hr>
+    <hr><br>
+
+    <button type="button" class="btn btn-primary" style="display: block;">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>,
+
+    <hr>
+    <hr><br>
+
+
+    <div class="container bg-warning"> <!-- bg yerine sm md lg xl yazılıp tipi değiştrilebilir.-->
+        <h1>GüraY</h1>
+    </div>
+
+    <hr>
+    <hr><br>
+
+
+    <!-- grid yapısı-->
+    <div class="container"> <!-- 1 tane satırı 3 parçaya bölen bir yapı oluşturuyo-->
+        <div class="row bg-warning" style="height: 200px;"> <!-- bg-warning arka planı sarı yapıyor-->
+            <div class="col-1 bg-primary"> <!--bg-primary arkaplanı mavi yapıyo-->
+                One of three columns
+            </div>
+            <div class="col-2 bg-danger text-light"> <!--text-light yazıyı beyaz yapıyo-->
+                One of three columns
+            </div>
+            <div class="col-9 bg-success"> <!-- 1-2-9 sayıları 12 parçanın bölündüğündeki payları-->
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <hr><br>
+
+    <div class="container"> <!-- aynı örnek ama sayfayı daralttıkça sm ile kutular alt alta geçiyo-->
+        <div class="row bg-warning" style="height: 200px;">
+            <div class="col-sm bg-primary"> <!--sm yazdığımız için 576px'in altına kadar yanyana-->
+                One of three columns <!--md lg xl yazılarak bu ayar değiştirilebilir-->
+            </div>
+            <div class="col-sm bg-danger text-light">
+                One of three columns
+            </div>
+            <div class="col-sm bg-success">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr><br>
+
+    <!-- tablet telefon ya da bilgisayardaki farklı görünümleri ayarlamak için aynı örneğin başka versiyonu-->
+    <div class="container">
+        <div class="row bg-warning" style="height: 200px;">
+            <div class="col-sm-4 col-md-3 col-lg-5 bg-primary"> <!-- sm md lg xl için ayrı ayrı değer verilebilir-->
+                One of three columns
+            </div>
+            <div class="col-sm-4 cold-md-5 col-lg-5 bg-danger text-light">
+                One of three columns
+            </div>
+            <div class="col-sm bg-success"> <!-- değer verilmese de 12'ye kendisi otomatik tamalıyor-->
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr><br>
+
+    <!-- Grid >> Alignment -->
+
+    <p>
+        <center>start</center>
+    </p>
+    <div class="container"> <!-- align-items-start en üstte hizalıyo-->
+        <div class="row bg-warning align-items-start" style="height: 200px;">
+            <div class="col-sm bg-primary">
+                One of three columns
+            </div>
+            <div class="col-sm bg-danger text-light">
+                One of three columns
+            </div>
+            <div class="col-sm bg-success">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p>
+        <center>center</center>
+    </p>
+    <div class="container"> <!-- align-items-center ortada hizalıyo-->
+        <div class="row bg-warning align-items-center" style="height: 200px;">
+            <div class="col-sm bg-primary">
+                One of three columns
+            </div>
+            <div class="col-sm bg-danger text-light">
+                One of three columns
+            </div>
+            <div class="col-sm bg-success">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p>
+        <center>end</center>
+    </p>
+    <div class="container"> <!-- align-items-end en altta hizalıyo-->
+        <div class="row bg-warning align-items-end" style="height: 200px;">
+            <div class="col-sm bg-primary">
+                One of three columns
+            </div>
+            <div class="col-sm bg-danger text-light">
+                One of three columns
+            </div>
+            <div class="col-sm bg-success">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p>
+        <center>self</center>
+    </p>
+    <div class="container"> <!-- self ile ayrı ayrı yerlere taşınılabilir-->
+        <div class="row bg-warning text-center" style="height: 200px;"> <!--text-center yazıları ortalıyo-->
+            <div class="col-sm bg-primary align-self-start" style="height: 100px;">
+                One of three columns
+            </div>
+            <div class="col-sm bg-danger text-light align-self-center" style="height: 100px;">
+                One of three columns
+            </div>
+            <div class="col-sm bg-success align-self-end" style="height: 100px;">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr><br>
+
+
+
+    <!--Horizontal Alignment - dikeyde hizalama-->
+
+    <!--örnek aynı. sadece dikey hizalama için justify-content-between ekledik.-->
+    <!-- justify-content-between deki between yerine center around start end kullanılabilir-->
+    <p>
+        <center>horizontal alignment</center>
+    </p>
+    <div class="container">
+        <div class="row bg-warning text-center justify-content-between" style="height: 200px;">
+            <div class="col-sm-2 bg-primary text-light" style="height: 50px;">
+                One of three columns
+            </div>
+            <div class="col-sm-2 bg-danger text-light" style="height: 50px;">
+                One of three columns
+            </div>
+            <div class="col-sm-2 bg-success text-light" style="height: 50px;">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <center>yatay dikey ortalama</center>
+    </p>
+    <div class="container"> <!-- hem yatayda hem dikeyde ortalama. sırf çeşitlilik olsun diye-->
+        <div class="row bg-warning text-center justify-content-center align-items-center" style="height: 200px;">
+            <div class="col-sm-2 bg-primary text-light" style="height: 50px;">
+                One of three columns
+            </div>
+            <div class="col-sm-2 bg-danger text-light" style="height: 50px;">
+                One of three columns
+            </div>
+            <div class="col-sm-2 bg-success text-light" style="height: 50px;">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr><br>
+
+    <p>
+        <center>fluid</center>
+    </p>
+    <div class="--container-fluid"> <!--container-fluid yaparsan satırın tamamını kaplar-->
+        <div class="row bg-warning text-center justify-content-center align-items-center" style="height: 200px;">
+            <div class="col-sm-2 bg-primary text-light" style="height: 50px;">
+                One of three columns
+            </div>
+            <div class="col-sm-2 bg-danger text-light" style="height: 50px;">
+                One of three columns
+            </div>
+            <div class="col-sm-2 bg-success text-light" style="height: 50px;">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr><br>
+
+
+
+    <!-- Margin ve Padding -->
+    <p>
+        <center>margin - padding</center>
+    </p>
+
+    <!-- m=margin  p=padding l=left b=bottom x=x ekseni  y=y ekseni-->
+    <div class="container text-center text-light">
+        <div class="bg-primary mt-4 pt-3 pb-3"> Güri</div>
+        <div class="bg-secondary mt-4 mx-3 py-3">Güri</div>
+        <div class="bg-success mt-4 mx-5 py-3">Güri</div>
+        <div class="bg-info mt-4 mx-3 py-3">Güri</div>
+        <div class="bg-danger mt-4 py-3">Güri</div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="container text-center text-light">
+        <center>
+            <div class="bg-primary mt-4 py-4" style="width: 90%; height: 80px;"> Güri</div>
+            <div class="bg-secondary mt-4 mx-3 py-4" style="width: 70%; height: 80px;">Güri</div>
+            <div class="bg-success mt-4 mx-5 py-4" style="width: 50%; height: 80px;">Güri</div>
+            <div class="bg-warning mt-4 mx-3 py-4" style="width: 70%; height: 80px;">Güri</div>
+            <div class="bg-danger mt-4 py-4" style="width: 90%; height: 80px;">Güri</div>
+        </center>
+    </div>
+
+    <hr>
+    <hr><br>
+
+
+    <p>
+        <center>alert</center>
+    </p>
+    <div class="alert alert-primary" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-success" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-info" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-light" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+    <div class="alert alert-dark" role="alert">
+        <span>Güray the Magnificent!</span>
+    </div>
+
+    <hr>
+    <hr><br>
+
+
+    <!--Text Decoration-->
+    <h3>
+        <center>Text Decoration</center>
+    </h3><br>
+    <div class="container">
+        <div class="alert-info">
+            <p class="text-left text-uppercase">Left aligned text on all viewport sizes.</p>
+        </div>
+        <!--text-uppercase tüm harfleri büyütür. capitalize baş harflerini büyütür. lowercase tüm harfleri küçültür-->
+        <div class="alert-danger">
+            <p class="text-center text-capitalize">Center aligned text on all viewport sizes.</p>
+        </div>
+        <p class="text-right ">Right aligned text on all viewport sizes.</p>
+
+        <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+        <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+        <p class="text-lg-right">Right aligned text on viewports sized LG (large) or wider.</p>
+        <p class="text-xl-right">Right aligned text on viewports sized XL (extra-large) or wider.</p>
+
+        <div class="container"> <!-- yazı tipi kalınlaştırma falan-->
+            <div class="alert-info mt-2 text-center font-weight-bold">
+                Güray the Magnificent!!
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="alert-info mt-2 text-center font-weight-light">
+                Güray the Magnificent!!
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="alert-info mt-2 text-center font-italic">
+                Güray the Magnificent!!
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="alert-info mt-2 text-center font-weight-bold">
+                Güray the Magnificent!!
+                <a href="#" class="text-decoration-none">Non-underlined link</a>
+            </div>
+        </div>
+
+        <br><br>
+        <p><a href="#" class="text-primary">Primary link</a></p>
+        <p><a href="#" class="text-secondary">Secondary link</a></p>
+        <p><a href="#" class="text-success">Success link</a></p>
+        <p><a href="#" class="text-danger">Danger link</a></p>
+        <p><a href="#" class="text-warning">Warning link</a></p>
+        <p><a href="#" class="text-info">Info link</a></p>
+        <p><a href="#" class="text-light bg-dark">Light link</a></p>
+        <p><a href="#" class="text-dark">Dark link</a></p>
+        <p><a href="#" class="text-muted">Muted link</a></p>
+        <p><a href="#" class="text-white bg-dark">White link</a></p>
+        <!--bg = background-->
+        <br>
+
+        <div class="p-3 mb-2 bg-primary text-dark">bg-primary</div>
+        <div class="p-3 mb-2 bg-secondary text-white">bg-secondary</div>
+        <div class="p-3 mb-2 bg-success text-white">bg-success</div>
+        <div class="p-3 mb-2 bg-danger text-white">bg-danger</div>
+        <div class="p-3 mb-2 bg-warning text-dark">bg-warning</div>
+        <!-- p-3 4 taraftan da boşluk bıraktırıyo. bg arka plan renki. text-dark yazı rengi-->
+
+
+
+
+    </div>
+
+
+
+    <p>
+        <center>buttons</center>
+    </p>
+
+    <div class="container">
+        <a class="btn btn-success" href="#" role="button">Link</a>
+        <button class="btn btn-primary btn-lg" type="submit">Button</button>
+        <input class="btn btn-warning btn-sm active" type="button" value="Input">
+        <input class="btn btn-danger" disabled type="submit" value="Submit">
+        <input class="btn btn-dark" type="reset" value="Reset">
+        <button class="btn btn-dark btn-lg btn-block active" type="submit">Button</button>
+
+        <br>
+
+        <!--üstüne gelince renklenen butonlar-->
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    </div>
+
+    <hr>
+    <hr><br>
+
+    <!-- Card -->
+    <span>
+        <center>Cards</center>
+    </span><br>
+
+    <div class="container">
+
+        <div class="card" style="width: 18rem;"> <!-- 1 rem = 16 pixel -->
+            <img src="wp1899021.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cart Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="muzan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Muzan Kibutsuji</h5>
+                <p class="card-text">İblislerin piri olarak bilinir. En baba iblis kendisidir. Zeki kibirli ve ilgi
+                    çekicidir.</p>
+                <a href="#" class="btn btn-primary">Buton</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Greatests Of All Times</h2>
+        <div class="row"> <!--div.col-4*3 diyerek 1 stunu 3e böldük.-->
+            <div class="col-sm">
+                <div class="card"> <!-- buradaki sabit genişlik kısımlarını siliyoruz ki esneklik kazansın-->
+                    <img src="phelps.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Phelps</h5>
+                        <p class="card-text"> 23 Altın 3 Gümüş 2 Bronz madalya. Tarihin en iyi yüzücüsü.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Michael_Phelps" class="btn btn-primary"
+                            target="_blank">Biyografi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card">
+                    <img src="msc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Schumacher</h5>
+                        <p class="card-text">7 kez F1 şampiyonu. Tarihin en hızlı ismi. Simply the best.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Michael_Schumacher" class="btn btn-primary"
+                            target="_blank">Biyografi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card">
+                    <img src="jordan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Jordan</h5>
+                        <p class="card-text">Basketballer. 6 times NBA champion. Pure class.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Michael_Jordan" class="btn btn-primary"
+                            target="_blank">Biyografi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-12 mt-3">
+                <div class="card-body font-weight-bold">
+                    Yahya Kemal Beyatlı.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card bg-dark text-white my-5">
+            <img src="vargas2.jfif" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title font-weight-bold font tex">Vargas Aşkın Olayım</h5>
+                <p class="card-text font-weight-bold">Az önce Filenin Sultanları avrupa şampiyonu olup bizi
+                    gururlandırdı. Çok mutluyum.</p>
+                <p class="card-text">03.09.2023</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+            </div>
+
+            <div class="card text-white bg-dark my-4">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+
+            <div class="card bg-light my-4">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="card">
+                <img src="muzan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr><br>
+
+
+
+    <!-- Lists and Tables-->
+    <h2>
+        <center>Tables and Lists</center>
+        <h3>
+            <center>Tables</center>
+        </h3>
+    </h2>
+    <br>
+
+
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <table class="table table-striped table-dark table-bordered table-hover"> <!-- çizgili dark çerçeveli yanmalı-->
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="table-sm table-hover"> <!--küçük tablo sm. hover yanmalı-->
+            <table class="table">
+                <caption>altına çıktı veriyor</caption> <!--altına çıktı veriyor-->
+                <thead>
+                    <tr class="table-primary"> <!--tablo satırını renklendirme-->
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-warning"> <!--tablo satırını renklendirme-->
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr class="table-success"> <!--tablo satırını renklendirme-->
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr class="table-danger"> <!--tablo satırını renklendirme-->
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <h3>
+        <center>Lists</center>
+    </h3><br>
+
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item active">An item</li> <!--active mavi yapıyo-->
+            <li class="list-group-item disabled">A second item</li> <!--disable = disable-->
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="container"> <!-- linke götürmeli-->
+        <div class="list-group list-group-flush"> <!--flush kenarlıkları götürüyo-->
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-danger">second link </a>
+            <a href="#" class="list-group-item list-group-item-warning">third link</a>
+            <a href="#" class="list-group-item list-group-item-success">fourth link</a>
+            <a class="list-group-item list-group-item-action disabled">DISABLED link</a> <!--disable-->
+        </div>
+    </div>
+
+    <br>
+
+    <h4>
+        <center>siteye bak dediğim kısım</center>
+    </h4>
+    <div class="container"> <!-- bildirim sayısı vesaire. siteye bak anlarsın-->
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <!--            estetik kazansın, yatayda ortalansın, dikeyde ortalansın-->
+                A list item
+                <span class="badge badge-danger badge-pill">14</span> <!-- rozet oluşturuyo-->
+            </li>
+            <li class="list-group-item d-flex justify-content-center align-items-center">
+                A second list item
+                <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-end align-items-center">
+                A third list item
+                <span class="badge badge-success badge-pill">1</span>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+    <hr><br>
+
+    <h2>
+        <center>F O R M S</center>
+    </h2>
+    <hr><br>
+
+    <div class="container">
+
+        <h3>
+            <center>Kayıt Formu</center>
+        </h3>
+        <form>
+            <div class="form-group mt-5">
+                <label for="isim">İsim</label>
+                <input type="text" class="form-control" id="isimInput" aria-describedby="emailHelp">
+                <small id="isimInput" class="form-text text-muted">Bu alan zorunludur.</small>
+            </div>
+
+
+            <div class="form-group">
+                <label for="sifre">Şifre</label>
+                <input type="password" class="form-control" id="sifre" aria-describedby="sifre2">
+                <small id="sifre" class="form-text text-muted">Bu alan zorunludur.</small>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">E-posta</label>
+                <input type="email" class="form-control" id="email" placeholder="guribey@gmail.com">
+            </div>
+
+
+            <div class="form-group">
+                <label for="sehir">Şehir</label>
+                <select class="form-control" id="sehir">
+                    <option>Eskişehir</option>
+                    <option>Ankara</option>
+                    <option>İzmir</option>
+                    <option>Adana</option>
+                    <option>Bursa</option>
+                </select>
+
+
+
+                <div class="form-group">
+                    <label for="dosya">Dosya yükleme</label>
+                    <input type="file" class="form-control-file" id="dosya">
+                </div><br>
+
+
+
+                <h6>Cinsiyet:</h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cinsiyet1"
+                        value="option1">
+                    <label class="form-check-label" for="cinsiyet1">Man</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cinsiyet2"
+                        value="option2">
+                    <label class="form-check-label" for="cinsiyet2">Woman</label>
+                </div>
+                <br><br>
+
+
+
+                <h6>Hobiler:</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check1">
+                    <label class="form-check-label" for="check1">
+                        kitap okumak
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check2">
+                    <label class="form-check-label" for="check2">
+                        film izlemek
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check3">
+                    <label class="form-check-label" for="check3">
+                        boş yapmak
+                    </label>
+                </div><br>
+
+
+                <button type="submit" class="btn btn-success btn-block">Kaydet</button>
+                <button type="reset" class="btn btn-secondary btn-block">Temizle</button>
+
+
+
+
+
+        </form>
+    </div>
+    <hr><br><br>
+
+
+
+
+    <h3>
+        <center>Ölçülü Kayıt Formu</center>
+    </h3>
+    <!-- genişlik ayarlı form-->
+    <div class="container">
+        <div style="width: 500px;">
+            <form class="mt-4">
+                <div class="form-group">
+                    <label for="isim">İsim</label>
+                    <input type="text" class="form-control" id="isimInput" aria-describedby="emailHelp">
+                    <small id="isimInput" class="form-text text-muted">Bu alan zorunludur.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-posta</label>
+                    <input type="email" class="form-control" id="email" placeholder="guribey@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="sehir">Şehir</label>
+                    <select class="form-control" id="sehir">
+                        <option>Eskişehir</option>
+                        <option>Ankara</option>
+                        <option>İzmir</option>
+                        <option>Adana</option>
+                        <option>Bursa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dosya">Dosya yükleme</label>
+                    <input type="file" class="form-control-file" id="dosya">
+                </div>
+
+
+                <button type="submit" class="btn btn-success btn-block">Kaydet</button>
+                <button type="reset" class="btn btn-secondary btn-block">Temizle</button>
+
+            </form>
+        </div>
+    </div>
+    <hr><br><br>
+
+
+
+    <!-- 2 sütuna bölmeli örnek-->
+    <h3>
+        <center>Kayıt Formu</center>
+    </h3>
+    <div class="container">
+        <form class="mt-4">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="isim">İsim</label>
+                        <input type="text" class="form-control" id="isimInput" aria-describedby="emailHelp">
+                        <small id="isimInput" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" class="form-control" id="email" placeholder="guribey@gmail.com">
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="sifre">Şifre</label>
+                        <input type="password" class="form-control" id="sifre" aria-describedby="sifre2">
+                        <small id="sifre" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sehir">Şehir</label>
+                        <select class="form-control" id="sehir">
+                            <option>Eskişehir</option>
+                            <option>Ankara</option>
+                            <option>İzmir</option>
+                            <option>Adana</option>
+                            <option>Bursa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="dosya">Dosya yükleme</label>
+                        <input type="file" class="form-control-file" id="dosya">
+                    </div><br>
+                </div>
+
+
+                <div class="col-3">
+                    <h6>Cinsiyet:</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cinsiyet1"
+                            value="option1">
+                        <label class="form-check-label" for="cinsiyet1">Man</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cinsiyet2"
+                            value="option2">
+                        <label class="form-check-label" for="cinsiyet2">Woman</label>
+                    </div><br><br>
+                </div>
+
+                <div class="col-3">
+                    <h6>Hobiler:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                        <label class="form-check-label" for="check1">
+                            kitap okumak
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check2">
+                        <label class="form-check-label" for="check2">
+                            film izlemek
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check3">
+                        <label class="form-check-label" for="check3">
+                            boş yapmak
+                        </label>
+                    </div>
+                </div>
+            </div><br>
+
+
+            <button type="submit" class="btn btn-success btn-block">Kaydet</button>
+            <button type="reset" class="btn btn-secondary btn-block">Temizle</button>
+
+
+        </form>
+    </div>
+    <hr>
+    <hr><br>
+
+
+
+    <!-- NAVBAR -->
+
+    <h2>
+        <center>N A V B A R</center>
+    </h2>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <a class="navbar-brand" href="#">
+                <img src="wp1899021.jpg" width="50" height="40" alt="">
+                Liberty City
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="color: darkblue;">Vice City <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: darkorchid;">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false" style="color: deeppink;">
+                            Efsaneler
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Tommy Vercetti</a>
+                            <a class="dropdown-item" href="#">CJ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Niko Bellic</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Hızlı ve Öfkeli
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Toretto</a>
+                            <a class="dropdown-item" href="#">Brian</a>
+                            <a class="dropdown-item" href="#">Roman</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">C4</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit" style="color: fff;">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!-- AYNI ÖRNEK. YUKARI SABIT VE TÜM SATIRI KAPLIYO-->
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="wp1899021.jpg" width="50" height="40" alt="">
+                Liberty City
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="color: darkblue;">Vice City <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: darkorchid;">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false" style="color: deeppink;">
+                            Efsaneler
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Tommy Vercetti</a>
+                            <a class="dropdown-item" href="#">CJ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Niko Bellic</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Hızlı ve Öfkeli
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Toretto</a>
+                            <a class="dropdown-item" href="#">Brian</a>
+                            <a class="dropdown-item" href="#">Roman</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">C4</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit" style="color: aliceblue;">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
